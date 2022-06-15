@@ -1,0 +1,7 @@
+.Card {
+color: rgba(194, 5, 5, 0.712);
+display:flex;
+box-shadow:10px 5px 5px rgba(194, 5, 5, 0.712);
+margin-top: 10rem;
+justify-content: center;
+}
