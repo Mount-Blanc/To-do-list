@@ -4,11 +4,11 @@ import './Form.css';
 function Card() {
     return <div> 
         <div>
-            <form>
+            <form className="style">
                 <label>To do </label>
-            <input type="text" ></input>
-            <label>Due date</label>
-            <input type="date"></input>
+                <input type="text" ></input>
+                <label>Due date</label>
+                <input type="date"></input>
 
             </form>
         </div>
