@@ -1,5 +1,5 @@
 import React from "react";
-import './card.css';
+import './form.css';
 
 function Card() {
     return <div> 
