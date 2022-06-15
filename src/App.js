@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <Card >
-      <Form>Card</Form>
-      <Tasks></Tasks>
+      <Form></Form>
+      </Card>
+      <Card>
+        <Tasks></Tasks>
       </Card>
     </div>
   );
