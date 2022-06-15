@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Form>Card</Form>
+      <Tasks></Tasks>
     </div>
   );
 }
