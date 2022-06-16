@@ -1,13 +1,14 @@
-.list {
-    display:flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding-top: 30px;
+.todo-title {
+display:flex
+}
+.todo-description {
+display:flex;
 }
 .todo-button {
     background-color: rgba(194, 5, 5, 0.712);
     border-radius: 30%;
     color:#FFF;
+    padding:15px 7px;
 }
 .todo-button:hover {
     background-color: rgba(219, 12, 12, 0.712);

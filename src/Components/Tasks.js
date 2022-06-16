@@ -2,15 +2,16 @@ import './Tasks.css';
 
 function Tasks () {
     return(
-        <div className="list">
+        <div className="todo-title">
         
          <div className="todo-button">ToDo</div>
             
         
-         <div>Insert Task</div>
+         <div className="todo-description">Insert Task
             
         
          <div>Due Date</div>
+         </div>
             
         </div>
     )
