@@ -6,15 +6,20 @@ import Card from './Components/Card';
 
 function App() {
   return (
-    <div className="App Task-grid">
+    <div className="App">
       <Card>
       <Form></Form>
       </Card>
+      <div className='Task-grid'>
       <Card>
         <Tasks></Tasks>
         <Tasks></Tasks>
         <Tasks></Tasks>
+        <Tasks></Tasks>
+        <Tasks></Tasks>
+        <Tasks></Tasks>
       </Card>
+      </div>
     </div>
   );
 }
