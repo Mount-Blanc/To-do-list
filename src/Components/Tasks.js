@@ -8,10 +8,9 @@ function Tasks () {
             
         
          <div className="todo-description">Insert Task
-            
+            </div>
         
          <div>Due Date</div>
-         </div>
             
         </div>
     )
