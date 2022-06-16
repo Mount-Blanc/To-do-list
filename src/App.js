@@ -10,8 +10,11 @@ function App() {
       <Card >
       <Form></Form>
       </Card>
-      <Card>
+      <Card className="Task-Card">
         <Tasks></Tasks>
+        <Tasks></Tasks>
+        <Tasks></Tasks>
+
       </Card>
     </div>
   );

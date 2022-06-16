@@ -6,7 +6,7 @@ justify-content: space-between;
 }
 .todo-description {
 display:flex;
-align-items: center;
+flex-direction: column;
 }
 .todo-button {
     background-color: rgba(194, 5, 5, 0.712);
