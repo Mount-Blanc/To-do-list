@@ -1,6 +1,11 @@
 .App {
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap:5px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+
+    grid-gap: 10px;
+}
+.Task-grid {
+  grid-row: 1 / 3;
 }
 
