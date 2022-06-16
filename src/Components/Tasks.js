@@ -1,8 +1,8 @@
-import './Tasks.css'
-
+import './Tasks.css';
+import './Form.css';
 function Tasks () {
     return(
-        <div>
+        <div className="form">
            <p>example</p>
         </div>
     )

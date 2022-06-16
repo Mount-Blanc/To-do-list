@@ -7,7 +7,7 @@ function Card() {
     }
     return <div> 
         <div>
-            <form className="style">
+            <form className="form">
                 <label>To do </label>
                 <input type="text" onChange={todo} ></input>
                 <label>Due date</label>
