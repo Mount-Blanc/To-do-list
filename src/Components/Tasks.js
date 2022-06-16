@@ -1,17 +1,17 @@
 import './Tasks.css';
-import './Form.css';
+
 function Tasks () {
     return(
-        <div className="form">
-            <div>
-                <h2>ToDo</h2>
-            </div>
-            <div>
-                Insert Task
-            </div>
-            <div>
-                Due Date
-            </div>
+        <div>
+        
+         <h2>ToDo</h2>
+            
+        
+         <p>Insert Task</p>
+            
+        
+         Due Date
+            
         </div>
     )
 }
