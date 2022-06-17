@@ -1,15 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import './Form.css';
 
 function Card() {
-    const todo = (event) => {
-        console.log(event.target.value);
+    const [enteredTodo, setenteredTodo] = useState('');
+    const userInput = (event) => {
+        setenteredTodo(event.target.value);
     }
-    return <div> 
+
+return <div> 
         <div>
             <form className="form">
-                <label>To do </label>
-                <input type="text" onChange={todo} ></input>
+                <label>ToDo </label>
+                <input type="text" onChange={userInput} ></input>
                 <label>Due date</label>
                 <input type="date"></input>
 

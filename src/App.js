@@ -12,9 +12,15 @@ function App() {
       </Card>
       <div className='Task-grid'>
       <Card>
-        <Tasks></Tasks>
-        <Tasks></Tasks>
-  
+    <Tasks></Tasks>
+    <Tasks></Tasks>
+    <Tasks></Tasks>
+    <Tasks></Tasks>
+    <Tasks></Tasks>
+    <Tasks></Tasks>
+    <Tasks></Tasks>
+    <Tasks></Tasks>
+    <Tasks></Tasks>
       </Card>
       </div>
     </div>
