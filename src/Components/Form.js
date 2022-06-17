@@ -8,13 +8,13 @@ function Form(props) {
     } 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.onUser();
+        props.onUser(enteredTodo);
     }
 return <div> 
         <div>
             <form  onSubmit={handleSubmit} className="form">
                 <label>ToDo </label>
-                <input type="text" onChange={userinputHandler} ></input>
+                <input type="text" value={enteredTodo} onChange={userinputHandler} ></input>
                 <label>Due date</label>
                 <input type="date"></input>
                 <button type="submit">Submit</button>

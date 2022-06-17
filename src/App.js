@@ -6,15 +6,16 @@ import Card from './Components/Card';
 
 function App() {
 
-const userdata = () => {
-  console.log('In App.js');
+const userdata = (todo) => {
+  console.log('App.js');
+  console.log(todo);
 }
 
 
   return (
     <div className="App">
       <Card>
-      <Form onUser={userdata}></Form>
+      <Form value= "" onUser={userdata}></Form>
       </Card>
       <div className='Task-grid'>
       <Card>
