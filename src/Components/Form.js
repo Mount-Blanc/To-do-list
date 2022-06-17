@@ -3,15 +3,15 @@ import './Form.css';
 
 function Card() {
     const [enteredTodo, setenteredTodo] = useState('');
-    const userInput = (event) => {
+    const userinputHandler = (event) => {
         setenteredTodo(event.target.value);
-    }
-
+    } 
+ 
 return <div> 
         <div>
             <form className="form">
                 <label>ToDo </label>
-                <input type="text" onChange={userInput} ></input>
+                <input type="text" onChange={userinputHandler} ></input>
                 <label>Due date</label>
                 <input type="date"></input>
 
