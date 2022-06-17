@@ -6,9 +6,8 @@ import Card from './Components/Card';
 
 function App() {
 
-const userdata = (props) => {
+const userdata = () => {
   console.log('In App.js');
-  console.log(userinputHandler);
 }
 
 
