@@ -1,10 +1,13 @@
 import './Tasks.css';
+import Card from './Card';
 
-function Tasks () {
+function Tasks (props) {
+
     return(
-        <div className="todo-title">
+        <Card>
+        <div className="todo-title"> 
         
-         <div className="todo-button">ToDo</div>
+         <div className="todo-button" >Todo</div>
             
         
          <div className="todo-description">Insert Task
@@ -13,6 +16,8 @@ function Tasks () {
          <div>Due Date</div>
             
         </div>
+    
+    </Card>
     )
 }
 

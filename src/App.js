@@ -4,24 +4,19 @@ import Form from './Components/Form';
 import Tasks from './Components/Tasks';
 import Card from './Components/Card';
 
-function App() {
+function App(props) {
 
-const userdata = (todo) => {
-  console.log('App.js');
-  console.log(todo);
+const userdata = (task) => {
 }
 
 
   return (
     <div className="App">
       <Card>
-      <Form value= "" onUser={userdata}></Form>
+      <Form value= "" onUser={userdata} ></Form>
       </Card>
       <div className='Task-grid'>
-      <Card>
-    <Tasks></Tasks>
-    <Tasks></Tasks>
-      </Card>
+    <Tasks usertask={userdata}></Tasks>
       </div>
     </div>
   );
