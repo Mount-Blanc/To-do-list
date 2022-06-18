@@ -9,6 +9,7 @@ import {Helmet} from "react-helmet";
 function App() {
   const [newtask, setnewtask] = useState('')
 const userdata = (newtask) => {
+  setnewtask(newtask);
   console.log("app");
   console.log(newtask);
 };
