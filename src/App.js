@@ -7,29 +7,21 @@ import Card from './Components/Card';
 import {Helmet} from "react-helmet";
 
 function App() {
-  const [newtask, setnewtask] = useState(' ')
-
+  const [newtask, setnewtask] = useState('')
 const userdata = (newtask) => {
-  setnewtask ((prevtask) => {
-    return [newtask, ...prevtask]
-  });
+  console.log("app");
+  console.log(newtask);
 };
-
 
   return (
 
 
     <div className="App">
-      <Helmet>
-          <title>What to Do?</title>
-          <meta name="What to Do?" content="Todo list" />
-      </Helmet>
-
 
       <Form value= "" onUser={userdata} ></Form>
 
       <div className='Task-grid'>
-        <Tasks usertask={userdata}></Tasks>
+        <Tasks task = {newtask}></Tasks>
       </div>
 
     </div>
