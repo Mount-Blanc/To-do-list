@@ -4,7 +4,6 @@ import Card from './Card';
 function Tasks (props) {
     return(
         <Card>
-        
         <div className="todo-title"> 
         
          <div className="todo-button" >Todo</div>

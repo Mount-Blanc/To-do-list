@@ -8,6 +8,12 @@ import {Helmet} from "react-helmet";
 
 function App() {
   const [newtask, setnewtask] = useState('')
+  const [newdate, setnewdate] = useState('')
+
+  const userdate = (newdate) => {
+    setnewdate(newdate);
+    console.log(newdate);
+  }
 const userdata = (newtask) => {
   setnewtask(newtask);
   console.log("app");
@@ -19,10 +25,13 @@ const userdata = (newtask) => {
 
     <div className="App">
 
-      <Form value= "" onUser={userdata} ></Form>
+      <Form value= "" onuserTask={userdata} onuserDate={userdate} ></Form>
 
       <div className='Task-grid'>
-        <Tasks task = {newtask}></Tasks>
+        <Tasks 
+        task = {newtask}
+         date = {newdate}>
+         </Tasks>
       </div>
 
     </div>
