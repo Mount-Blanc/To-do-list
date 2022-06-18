@@ -30,7 +30,7 @@ const userdata = (newtask) => {
       <div className='Task-grid'>
         <Tasks 
         task = {newtask}
-         date = {newdate}>
+         date = {newdate} >
          </Tasks>
       </div>
 

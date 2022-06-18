@@ -12,7 +12,7 @@ function Tasks (props) {
          <div className="todo-description">{props.task}
             </div>
         
-         <div>Due Date</div>
+         <div>{props.date}</div>
             
         </div>
     
