@@ -16,7 +16,12 @@ function Form(props) {
         event.preventDefault();
         props.onuserTask(enteredTodo);
         props.onuserDate(enteredDate);
+
+        setenteredDate('');
+        setenteredTodo('');
     }
+
+
 return <div> 
         <div>
             <Card>
