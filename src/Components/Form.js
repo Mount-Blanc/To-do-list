@@ -2,22 +2,15 @@ import React, {useState} from "react";
 import './Form.css';
 import Card from './Card';
 function Form(props) {
-    const [userInput, setenteredTodo] = useState({
-        enteredTodo: '',
-        enteredDate: ''
-    });
+    const [enteredTodo, setenteredTodo] = useState('');
     const [enteredDate, setenteredDate] = useState('');
 
     const userdateHandler = (event) => {
-        setenteredDate({
-            ...userInput,
-            enteredDate:event.target.value });
+        setenteredDate(event.target.value );
         console.log(setenteredDate);
     }
     const userinputHandler = (event) => {
-        setenteredTodo({
-            ...userInput,
-            enteredTodo:event.target.value});
+        setenteredTodo(event.target.value);
     } 
     const handleSubmit = (event) => {
         event.preventDefault();
