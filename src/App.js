@@ -23,15 +23,15 @@ const userdata = (newtask) => {
       <Helmet>
           <title>What to Do?</title>
           <meta name="What to Do?" content="Todo list" />
-       </Helmet>
+      </Helmet>
 
 
-      <Card>
       <Form value= "" onUser={userdata} ></Form>
-      </Card>
+
       <div className='Task-grid'>
-    <Tasks usertask={userdata}></Tasks>
+        <Tasks usertask={userdata}></Tasks>
       </div>
+
     </div>
   );
 }
