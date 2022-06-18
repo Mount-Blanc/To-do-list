@@ -6,22 +6,29 @@ import Tasks from './Components/Tasks';
 import Card from './Components/Card';
 import {Helmet} from "react-helmet";
 
+
+const dummyTodo = [ {
+  id:"1", task: '', dueDate: ''}
+]
+
 function App() {
+
+
   const [newtask, setnewtask] = useState('')
   const [newdate, setnewdate] = useState('')
   const userdate = (newdate) => {
     setnewdate(newdate);
     console.log(newdate);
-    
   }
+
 const userdata = (newtask) => {
   setnewtask(newtask);
   console.log("app");
-  console.log();
+  console.log(newtask);
+  
 
-  const userArr= [newtask,newdate]
-  console.log(userArr)
 };
+
   return (
 
 
@@ -31,9 +38,7 @@ const userdata = (newtask) => {
 
       <div className='Task-grid'>
         <Tasks 
-        task = {newtask}
-         date = {newdate} >
-         </Tasks>
+        task = {newtask} date = {newdate}  items = {dummyTodo}> </Tasks>
       </div>
 
     </div>

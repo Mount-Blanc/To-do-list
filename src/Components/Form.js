@@ -7,7 +7,6 @@ function Form(props) {
 
     const userdateHandler = (event) => {
         setenteredDate(event.target.value );
-        console.log(setenteredDate);
     }
     const userinputHandler = (event) => {
         setenteredTodo(event.target.value);
