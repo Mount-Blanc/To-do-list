@@ -1,13 +1,18 @@
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Form from './Components/Form';
 import Tasks from './Components/Tasks';
 import Card from './Components/Card';
 
-function App(props) {
+function App() {
+  const [newtask, setnewtask] = useState(' ')
 
-const userdata = (task) => {
-}
+const userdata = (newtask) => {
+  setnewtask ((prevtask) => {
+    return [newtask, ...prevtask]
+  });
+};
 
 
   return (
