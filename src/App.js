@@ -9,17 +9,19 @@ import {Helmet} from "react-helmet";
 function App() {
   const [newtask, setnewtask] = useState('')
   const [newdate, setnewdate] = useState('')
-
   const userdate = (newdate) => {
     setnewdate(newdate);
     console.log(newdate);
+    
   }
 const userdata = (newtask) => {
   setnewtask(newtask);
   console.log("app");
-  console.log(newtask);
-};
+  console.log();
 
+  const userArr= [newtask,newdate]
+  console.log(userArr)
+};
   return (
 
 
