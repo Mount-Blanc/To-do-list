@@ -1,11 +1,11 @@
 import './Tasks.css';
 import Card from './Card';
-import Form from './Form';
+import Taskitems from './Taskitems';
 function Tasks (props) {
 
     return(
         <Card>
-{props.items.map(dummyTodo => <Form task={dummyTodo.task} date={dummyTodo.date} />)} 
+{props.items.map(dummyTodo => <Taskitems task={dummyTodo.task} date={dummyTodo.date} />)} 
         <div className="todo-title"> 
 
              <div className="todo-button" >Todo</div>
