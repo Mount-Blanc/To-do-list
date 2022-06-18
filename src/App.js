@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Form from './Components/Form';
 import Tasks from './Components/Tasks';
-import Card from './Components/Card';
 import Taskitems from './Components/Taskitems';
 
 const dummyTodo = [ {

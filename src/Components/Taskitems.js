@@ -9,7 +9,6 @@ return (
 <div className="todo-title">
     <div className="todo-button" >Todo</div>
 
-
         <div className="todo-description">Insert Task
     </div>
 
