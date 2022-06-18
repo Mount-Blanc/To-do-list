@@ -1,4 +1,3 @@
-import './Tasks.css';
 import Card from './Card';
 import Taskitems from './Taskitems';
 function Tasks (props) {

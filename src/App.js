@@ -4,8 +4,7 @@ import './App.css';
 import Form from './Components/Form';
 import Tasks from './Components/Tasks';
 import Card from './Components/Card';
-import {Helmet} from "react-helmet";
-
+import Taskitems from './Components/Taskitems';
 
 const dummyTodo = [ {
   id:"1", task: '', dueDate: ''}
@@ -37,8 +36,8 @@ const userdata = (newtask) => {
       <Form value= "" onuserTask={userdata} onuserDate={userdate} ></Form>
 
       <div className='Task-grid'>
-        <Tasks 
-        task = {newtask} date = {newdate}  items = {dummyTodo}> </Tasks>
+        <Taskitems 
+        task = {newtask} date = {newdate}  items = {dummyTodo}> </Taskitems>
       </div>
 
     </div>
