@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
-import Form from './Components/Form';
-import Tasks from './Components/Tasks';
-import Taskitems from './Components/Taskitems';
+import Form from './Components/Expenses/Form';
+import Tasks from './Components/Expenses/Tasks';
+import Taskitems from './Components/Expenses/Taskitems';
 
 const dummyTodo = [ {
   id:"1", task: '', dueDate: ''}
