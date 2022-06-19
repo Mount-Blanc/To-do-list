@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Form from './Components/NewTask/Form';
+import TaskForm from './Components/NewTask/TaskForm';
 import Tasks from './Components/Expenses/Tasks';
 import Taskitems from './Components/Expenses/Taskitems';
 
@@ -37,7 +37,7 @@ const userdata = (newtask) => {
 
     <div className="App">
 
-      <Form value= "" onuserTask={userdata} onuserDate={userdate} ></Form>
+      <TaskForm value= "" onuserTask={userdata} onuserDate={userdate} ></TaskForm>
 
       <div className='Task-grid'>
         <Taskitems 

@@ -1,11 +1,12 @@
 import React from "react";
+import Taskitems from "../Expenses/Taskitems";
+
 
 const NewTask = () => {
-
-
 return (
-<div></div>
-
+            <div>
+            <Taskitems/>
+            </div>
 )
 }
 
