@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './Form.css';
-import Card from './Card';
+import Card from '../UI/Card';
 function Form(props) {
     const [enteredTodo, setenteredTodo] = useState('');
     const [enteredDate, setenteredDate] = useState('');
