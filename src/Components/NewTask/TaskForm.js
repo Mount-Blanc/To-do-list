@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import './TaskForm.css';
 import Card from '../UI/Card';
-function Form(props) {
+
+function TaskForm(props) {
+
     const [enteredTodo, setenteredTodo] = useState('');
     const [enteredDate, setenteredDate] = useState('');
 
@@ -13,13 +15,17 @@ function Form(props) {
     } 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.onuserTask(enteredTodo);
-        props.onuserDate(enteredDate);
+        props.onuserTask(enteredTodo)
 
+        const userData = [{ 
+            task:enteredTodo,
+            date:enteredDate,
+
+        }];
+        props.onSaveNewTask(userData)
         setenteredDate('');
         setenteredTodo('');
-    }
-
+    };
 
 return <div> 
         <div>
@@ -36,4 +42,4 @@ return <div>
         </div>
     </div>
 }
-export default Form;
+export default TaskForm;

@@ -1,13 +1,21 @@
 import React from "react";
-import Taskitems from "../Expenses/Taskitems";
+import TaskForm from "../NewTask/TaskForm";
 
 
 const NewTask = () => {
+
+const saveNewTaskHandler = (enteredUserData) => {
+   const userData = {
+        ...enteredUserData,
+        id: Math.random().toString()
+   }
+
+};
 return (
             <div>
-            <Taskitems/>
+            <TaskForm onSaveNewTask={saveNewTaskHandler} />
             </div>
-)
-}
+        );
+};
 
 export default NewTask;
