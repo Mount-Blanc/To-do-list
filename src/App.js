@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Form from './Components/Expenses/Form';
+import Form from './Components/NewTask/Form';
 import Tasks from './Components/Expenses/Tasks';
 import Taskitems from './Components/Expenses/Taskitems';
 
