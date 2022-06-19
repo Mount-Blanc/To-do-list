@@ -9,7 +9,13 @@ const dummyTodo = [ {
 ]
 
 function App() {
+const [USERTASK, setUSERTASK] = useState(dummyTodo)
 
+const addUserTaskHandler = USERTASK => {
+  setUSERTASK( (prevUSERTASK) =>{
+    return [USERTASK, ...prevUSERTASK];
+})
+}
 
   const [newtask, setnewtask] = useState('')
   const [newdate, setnewdate] = useState('')
