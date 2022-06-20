@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './TaskForm.css';
 import Card from '../UI/Card';
+import '../Expenses/Taskitems.css';
 
 function TaskForm(props) {
 
@@ -34,7 +35,7 @@ return <div>
                 <input type="text" value={enteredTodo} onChange={userinputHandler} ></input>
                 <label>Due date</label>
                 <input type="date" value={enteredDate} onChange={userdateHandler}></input>
-                <button type="submit">Submit</button>
+                <button className="todo-button" type="submit" >Submit</button>
 
             </form>
             </Card>
