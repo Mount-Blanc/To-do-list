@@ -11,10 +11,9 @@ function App() {
 
 const [enteredData, setentereddata] = useState()
 
-  const UserDataHandler = (userdata) => {
-     setentereddata(userdata)
-  }
-
+  const UserDataHandler = (entereduserdata) => {
+           
+    }
   return (
 
 
