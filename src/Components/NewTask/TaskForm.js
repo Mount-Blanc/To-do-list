@@ -19,7 +19,7 @@ function TaskForm(props) {
 
         const userData = { 
             task:enteredTodo,
-            date:enteredDate,
+            duedate:enteredDate,
 
         };
         props.onSaveNewTask(userData)
