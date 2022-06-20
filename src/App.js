@@ -9,17 +9,13 @@ const dummyTodoData = {
 }
 function App() {
 
-const [enteredData, setentereddata] = useState()
-
-  const UserDataHandler = (entereduserdata) => {
-           
-    }
+    
   return (
 
 
     <div className="App">
 
-      <NewTask value= '' onUserData= {UserDataHandler} />
+      <NewTask value= '' />
 
       <div className='Task-grid'>
         <Tasks items = {dummyTodoData} />
