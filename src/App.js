@@ -8,39 +8,17 @@ const dummyTodo = [ {
 ]
 
 function App() {
-const [USERTASK, setUSERTASK] = useState(dummyTodo)
-
-const addUserTaskHandler = USERTASK => {
-  setUSERTASK( (prevUSERTASK) =>{
-    return [USERTASK, ...prevUSERTASK];
-})
-}
-
-  const [newtask, setnewtask] = useState('')
-  const [newdate, setnewdate] = useState('')
-  const userdate = (newdate) => {
-    setnewdate(newdate);
-    console.log(newdate);
-  }
-
-const usertask = (newtask) => {
-  setnewtask(newtask);
-  console.log("app");
-  console.log(newtask);
-  
-
-};
 
   return (
 
 
     <div className="App">
 
-      <TaskForm value= "" onuserTask={usertask} onuserDate={userdate} ></TaskForm>
+      <TaskForm value= ""  ></TaskForm>
 
       <div className='Task-grid'>
         <Taskitems 
-        task = {newtask} date = {newdate}  items = {dummyTodo}> </Taskitems>
+        > </Taskitems>
       </div>
 
     </div>
