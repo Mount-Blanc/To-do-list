@@ -9,7 +9,7 @@ const saveNewTaskHandler = (enteredUserData) => {
         ...enteredUserData,
         id: Math.random().toString()
    }
-
+   console.log(userData);
 };
 return (
             <div>

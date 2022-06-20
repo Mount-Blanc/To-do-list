@@ -15,7 +15,6 @@ function TaskForm(props) {
     } 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.onuserTask(enteredTodo)
 
         const userData = [{ 
             task:enteredTodo,

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import TaskForm from './Components/NewTask/TaskForm';
+import NewTask from './Components/NewTask/NewTask';
 import Taskitems from './Components/Expenses/Taskitems';
 
 const dummyTodo = [ {
@@ -14,7 +14,7 @@ function App() {
 
     <div className="App">
 
-      <TaskForm value= ""  ></TaskForm>
+      <NewTask value= ""  />
 
       <div className='Task-grid'>
         <Taskitems 
