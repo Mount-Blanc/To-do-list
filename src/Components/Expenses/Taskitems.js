@@ -8,10 +8,10 @@ return (
 <Card>
 <div className="todo-title">
     <div className="todo-button" >Todo</div>
-        <div className="todo-description">{}
+        <div className="todo-description"> {props.dummy.task}
     </div>
 
-    <div>{}</div>
+    <div>{props.dummy.duedate}</div>
 </div>
 </Card>
 )

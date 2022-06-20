@@ -3,15 +3,16 @@ import './App.css';
 import NewTask from './Components/NewTask/NewTask';
 import Taskitems from './Components/Expenses/Taskitems';
 
-const dummyTodo = [ {
-  id:"1", task: '', dueDate: ''}
-]
-
+const dummyTodoData = {
+  task:'0',
+  duedate:'0'
+}
 function App() {
 
-  const UserDataHandler = (userdata) => {
+const [enteredData, setentereddata] = useState()
 
-    console.log(userdata)
+  const UserDataHandler = (userdata) => {
+     setentereddata(userdata)
   }
 
   return (
@@ -22,7 +23,7 @@ function App() {
       <NewTask value= '' onUserData= {UserDataHandler} />
 
       <div className='Task-grid'>
-        <Taskitems task = {dummyTodo} />
+        <Taskitems dummy = {dummyTodoData} />
       </div>
 
     </div>
