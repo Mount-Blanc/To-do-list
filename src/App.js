@@ -3,10 +3,10 @@ import './App.css';
 import NewTask from './Components/NewTask/NewTask';
 import Tasks from './Components/Expenses/Tasks';
 
-const dummyTodoData = {
+const dummyTodoData = [{
   task:'0',
   duedate:'0'
-}
+}]
 function App() {
 
     

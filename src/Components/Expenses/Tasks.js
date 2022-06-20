@@ -5,11 +5,10 @@ import Taskitems from './Taskitems';
 
 function Tasks (props) {
 
-
     return (
-        <div>
+    <div>
         <Card>
-         {props.items.map( (dummyTodoData) => <Taskitems task = {dummyTodoData.task} duedate = {dummyTodoData.duedate} />)}
+        {props.items.map((dummyTodoData) => <Taskitems task= {dummyTodoData.task} duedate={dummyTodoData.duedate} />)}
         </Card>
 
     </div>
