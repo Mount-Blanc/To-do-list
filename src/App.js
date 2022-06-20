@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import NewTask from './Components/NewTask/NewTask';
-import Taskitems from './Components/Expenses/Taskitems';
+import Tasks from './Components/Expenses/Tasks';
 
 const dummyTodoData = {
   task:'0',
@@ -22,7 +22,7 @@ const [enteredData, setentereddata] = useState()
       <NewTask value= '' onUserData= {UserDataHandler} />
 
       <div className='Task-grid'>
-        <Taskitems items = {dummyTodoData} />
+        <Tasks items = {dummyTodoData} />
       </div>
 
     </div>
