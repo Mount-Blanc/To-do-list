@@ -8,19 +8,22 @@ const dummyTodoData = [{
   duedate:'0',
 }]
 function App() {
+const [userData, setuserData] = useState(dummyTodoData)
 
-    const UserDataHandler = () => {
-      
-    }
+    const UserDataHandler = (userData) => {
+      setuserData((prevdummyTodoData) => {
+        return [userData, ...prevdummyTodoData];
+      });
+    };
+
+
   return (
-
-
     <div className="App">
 
       <NewTask value= '' onUserData ={UserDataHandler} />
 
       <div className='Task-grid'>
-        <Tasks items = {dummyTodoData} />
+        <Tasks items = {userData} />
       </div>
 
     </div>

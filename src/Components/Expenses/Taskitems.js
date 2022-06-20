@@ -1,8 +1,6 @@
 import React from "react";
 import "./Taskitems.css";
 import Card from '../UI/Card';
-import Tasks from './Tasks';
-
 function Taskitems (props) {
 
 return (
