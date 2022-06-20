@@ -16,11 +16,11 @@ function TaskForm(props) {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const userData = [{ 
+        const userData = { 
             task:enteredTodo,
             date:enteredDate,
 
-        }];
+        };
         props.onSaveNewTask(userData)
         setenteredDate('');
         setenteredTodo('');

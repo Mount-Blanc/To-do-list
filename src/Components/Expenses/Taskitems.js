@@ -2,17 +2,16 @@ import React from "react";
 import "./Taskitems.css";
 import Card from '../UI/Card';
 
-function Taskitems () {
+function Taskitems (props) {
 
 return ( 
 <Card>
 <div className="todo-title">
     <div className="todo-button" >Todo</div>
-
-        <div className="todo-description">Insert Task
+        <div className="todo-description">{}
     </div>
 
-    <div>Due Date</div>
+    <div>{}</div>
 </div>
 </Card>
 )

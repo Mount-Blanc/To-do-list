@@ -2,14 +2,14 @@ import React from "react";
 import TaskForm from "../NewTask/TaskForm";
 
 
-const NewTask = () => {
+const NewTask = (props) => {
 
 const saveNewTaskHandler = (enteredUserData) => {
    const userData = {
         ...enteredUserData,
         id: Math.random().toString()
    }
-   console.log(userData);
+   props.onUserData(userData)
 };
 return (
             <div>

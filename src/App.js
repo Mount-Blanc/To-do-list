@@ -9,16 +9,20 @@ const dummyTodo = [ {
 
 function App() {
 
+  const UserDataHandler = (userdata) => {
+
+    console.log(userdata)
+  }
+
   return (
 
 
     <div className="App">
 
-      <NewTask value= ""  />
+      <NewTask value= '' onUserData= {UserDataHandler} />
 
       <div className='Task-grid'>
-        <Taskitems 
-        > </Taskitems>
+        <Taskitems task = {dummyTodo} />
       </div>
 
     </div>
