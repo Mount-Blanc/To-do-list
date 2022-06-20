@@ -5,17 +5,19 @@ import Tasks from './Components/Expenses/Tasks';
 
 const dummyTodoData = [{
   task:'0',
-  duedate:'0'
+  duedate:'0',
 }]
 function App() {
 
-    
+    const UserDataHandler = () => {
+      
+    }
   return (
 
 
     <div className="App">
 
-      <NewTask value= '' />
+      <NewTask value= '' onUserData ={UserDataHandler} />
 
       <div className='Task-grid'>
         <Tasks items = {dummyTodoData} />

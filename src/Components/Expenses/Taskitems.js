@@ -8,9 +8,9 @@ function Taskitems (props) {
 return (
     <Card>
  <div className="todo-title">  
-     <div className="todo-button" >Todo</div>
-     <div className="todo-description"> </div>
-     <div></div>
+     <div className="todo-button" > ToDo</div>
+     <div className="todo-description">{props.task} </div>
+     <div>{props.duedate}</div>
 
 </div>
 
