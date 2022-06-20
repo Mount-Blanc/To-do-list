@@ -23,7 +23,7 @@ const [enteredData, setentereddata] = useState()
       <NewTask value= '' onUserData= {UserDataHandler} />
 
       <div className='Task-grid'>
-        <Taskitems dummy = {dummyTodoData} />
+        <Taskitems items = {dummyTodoData} />
       </div>
 
     </div>
