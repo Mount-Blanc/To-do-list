@@ -1,20 +1,19 @@
 import React from "react";
 import Card from "../UI/Card";
 import './Tasks.css';
+import Taskitems from './Taskitems';
 
 function Tasks (props) {
 
 
     return (
+        <div>
         <Card>
-     <div className="todo-title">  
-         <div className="todo-button" >Todo</div>
-         <div className="todo-description"> {props.items.task}</div>
-         <div>{props.items.duedate}</div>
-    
+         {props.items.map( (dummyTodoData) => <Taskitems task = {dummyTodoData.task} duedate = {dummyTodoData.duedate} />)}
+        </Card>
+
     </div>
     
-    </Card>
     )
 }
 

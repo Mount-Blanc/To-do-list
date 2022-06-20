@@ -5,15 +5,17 @@ import Tasks from './Tasks';
 
 function Taskitems (props) {
 
-return ( 
-    <div>
-        <Card>
-        {props.items.map(dummyTodoData => <Tasks task = {dummyTodoData.task} duedate={dummyTodoData.duedate} />)}
+return (
+    <Card>
+ <div className="todo-title">  
+     <div className="todo-button" >Todo</div>
+     <div className="todo-description"> {props.items.task}</div>
+     <div>{props.items.duedate}</div>
 
-        </Card>
-    </div>
+</div>
+
+</Card>
 )
-
 }
 
 export default Taskitems
