@@ -4,8 +4,9 @@ import NewTask from './Components/NewTask/NewTask';
 import Tasks from './Components/Expenses/Tasks';
 
 const dummyTodoData = [{
-  task:'0',
-  duedate:'0',
+  id:'1',
+  task:'',
+  duedate:'',
 }]
 function App() {
 const [userData, setuserData] = useState(dummyTodoData)

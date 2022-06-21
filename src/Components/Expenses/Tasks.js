@@ -8,7 +8,11 @@ function Tasks (props) {
     return (
     <div>
         <Card>
-        {props.items.map((dummyTodoData) => <Taskitems task= {dummyTodoData.task} duedate={dummyTodoData.duedate} />)}
+        {props.items.map((dummyTodoData) => <Taskitems 
+        key={dummyTodoData.id}
+        task= {dummyTodoData.task}
+         duedate={dummyTodoData.duedate} />
+         )}
         </Card>
 
     </div>
